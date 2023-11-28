@@ -1,0 +1,81 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            border: 1px solid #d0d0d0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #d0d0d0;
+            background-color: white;
+        }
+
+        .header {
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0088cc;
+        }
+
+        .content {
+            padding: 10px;
+            min-height: 300px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: #0088cc;
+            color: white;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #00aacc;
+        }
+
+        .button:active {
+            background-color: #0066aa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Mini Web App Telegram
+        </div>
+        <div class="content" id="content">
+            Добро пожаловать в Mini Web App Telegram!
+            Это простое приложение, которое позволяет вам отправлять и получать сообщения от других пользователей.
+            Вы можете выбрать одну из трех кнопок ниже, чтобы начать общение.
+        </div>
+        <div class="buttons">
+            <button class="button" id="button1" onclick="button1()">Начать чат с Анной</button>
+            <button class="button" id="button2" onclick="button2()">Начать чат с Борисом</button>
+            <button class="button" id="button3" onclick="button3()">Начать чат с Виктором</button>
+        </div>
+    </div>
+    <script>
+        function button1() {
+            document.getElementById("content").innerHTML = "Вы начали чат с Анной. Она очень дружелюбная и интересная собеседница. Вы можете поговорить с ней о разных темах, например, о путешествиях, книгах или музыке.";
+        }
+
+        function button2() {
+            document.getElementById("content").innerHTML = "Вы начали чат с Борисом. Он очень умный и знает много фактов об истории, науке и технологиях. Вы можете задать ему любой вопрос, и он постарается ответить на него.";
+        }
+
+        function button3() {
+            document.getElementById("content").innerHTML = "Вы начали чат с Виктором. Он очень веселый и любит шутить. Вы можете посмеяться с ним над разными анекдотами, приколами или мемами.";
+        }
+    </script>
+</body>
+</html>
